@@ -7,28 +7,24 @@ A web-based platform that empowers users to verify whether they’ve given conse
 ## 📁 File Structure
 
 ConsentLens/
+│── client/                 # Frontend (simple HTML/CSS/JS)
+│   ├── index.html          # Home + consent form
+│   ├── style.css           # Styling
+│   └── script.js           # API calls
 │
-├── client/ # Frontend (React.js)
-│ ├── public/
-│ └── src/
-│ ├── components/ # Reusable UI components
-│ ├── pages/ # App pages like Home, Dashboard
-│ ├── services/ # API calls
-│ ├── App.js # Main component
-│ └── index.js # Entry point
+│── server/                 # Backend (Node.js + Express)
+│   ├── controllers/
+│   ├── routes/
+│   ├── models/
+│   ├── utils/
+│   ├── uploads/
+│   ├── config/
+│   ├── app.js
+│   └── server.js
 │
-├── server/ # Backend (Node.js + Express)
-│ ├── controllers/ # Request logic
-│ ├── routes/ # API routes
-│ ├── models/ # Mongoose Schemas
-│ ├── utils/ # Utility functions (face recognition etc.)
-│ ├── uploads/ # Uploaded images
-│ ├── config/ # DB, environment config
-│ ├── app.js # Main Express app
-│ └── server.js # Server setup
-│
-├── .gitignore
-└── README.md
+│── .gitignore
+│── README.md
+
 
 ---
 
